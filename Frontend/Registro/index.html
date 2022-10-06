@@ -15,18 +15,18 @@
         <form autocomplete="off">
             <!--method="post"-->
             <label for="Nombres">Nombres</label>
-            <input type="text" name="Nombres" id="Nombres" placeholder="Ingrese sus nombres" pattern="^[A-Za-z]+$" title="Ingrese solo texto" required>
+            <input type="text" name="Nombres" id="Nombres" placeholder="Ingrese sus nombres" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚú\s]+$" title="Solo acepta letras y espacios en blanco, no caracteres ni tildes" required>
             
             <label for="Apellidos">Apellidos</label>
-            <input type="text" name="Apellidos" id="Apellidos" placeholder="Ingrese sus apellidos" pattern="^[A-Za-z]+$" required>
+            <input type="text" name="Apellidos" id="Apellidos" placeholder="Ingrese sus apellidos" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚú\s]+$" title="Solo acepta letras y espacios en blanco, no caracteres ni tildes" required>
 
             <label for="Correo-electronico">Correo electronico</label>
-            <input type="email" name="Correo" id="Correo-electronico" placeholder="Ingrese su correo electronico" required>
+            <input type="email" name="Correo" id="Correo-electronico" placeholder="Ingrese su correo electronico" pattern="^(\w+[/./-/_]?){1,}@[a-z]+[/.]\w{2,}$" title="Formato de correo invalido" required>
 
             <label for="Contraseña" >Contraseña</label>
             <input type="password" name="Contraseña" id="Contraseña" placeholder="Ingrese su contraseña" required>
 
-            <p id="TyC">Estoy de acuerdo con <a href="#">Terminos y Condiciones</a></p>
+            <p id="TyC">Al darle registrar estoy de acuerdo con <a href="#">Terminos y Condiciones</a></p>
 
             <input type="submit" value="Registar">
 
